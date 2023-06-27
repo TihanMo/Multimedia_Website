@@ -3,8 +3,8 @@ import MyPicture from '../assets/Tram_Closeup.jpg';
 
 const Home = () => {
   return (
-    <div>
-      <ParallaxComponent bgImage={MyPicture} strength={250}>
+    <div className='home'>
+      <ParallaxComponent bgImage={MyPicture} strength={450}>
         <div style={{ width: '100%', height: '100vh' }}>
           <div
             style={{

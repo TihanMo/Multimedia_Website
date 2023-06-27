@@ -32,25 +32,15 @@ Meine Idee ist es den öffentlichen Verkehr der Schweiz, darzustellen denn es gi
 
 In diesem Kapitel habe ich verschiedene Tools Gegeneinander in einer Entscheidungsmatrix Gegeneinandergestellt. Duch mein Punktesystem konnte ich herausfinden welches Tool am besten zu meiner Arbeit passt.
 
-### Kriterien
+### Photo Bearbeitungstool
 
-#### Photo Bearbeitungstool:
+**Kriterien:**
 
 1. **Einfach zum benutzen:** Misst die Benutzerfreundlichkeit und Intuitivität des Tools. Ein höherer Wert zeigt an, dass das Tool einfacher zu erlernen und zu bedienen ist.
 2. **Features & Funktionalität:** Bewerte die Anzahl und Vielfalt der verfügbaren Funktionen im Tool. Ein höherer Wert zeigt an, dass das Tool mehr Funktionen und Möglichkeiten bietet.
 3. **UI:** Bewerte das Design des Benutzerinterfaces. Ein höherer Wert zeigt an, dass das Benutzerinterface attraktiv und gut gestaltet ist.
 4. **Kompatibilität:** Misst die Fähigkeit des Tools, mit verschiedenen Betriebssystemen und Dateiformaten umzugehen. Ein höherer Wert zeigt eine größere Kompatibilität an.
 5. **Günstig:** Bewertet, ob das Tool kostengünstig ist. Ein höherer Wert zeigt an, dass das Tool entweder kostenlos oder relativ preiswert ist.
-
-#### Javascript Framework:
-
-1. **Einfach zum benutzen:** Misst die Benutzerfreundlichkeit und Intuitivität des Frameworks. Ein höherer Wert zeigt an, dass das Framework einfacher zu erlernen und zu bedienen ist.
-2. **Features & Funktionalität:** Bewerte die Anzahl und Vielfalt der Funktionen und Fähigkeiten des Frameworks. Ein höherer Wert zeigt an, dass das Framework mehr Funktionen und Möglichkeiten bietet.
-3. **Flexibilität:** Bewertet, wie anpassungsfähig das Framework ist. Ein höherer Wert zeigt an, dass das Framework leichter an verschiedene Anforderungen und Projekte angepasst werden kann.
-4. **Performance:** Bewerte die Geschwindigkeit und Effizienz des Frameworks. Ein höherer Wert zeigt an, dass das Framework schnell und leistungsstark ist.
-5. **Popularität:** Misst, wie weit verbreitet und akzeptiert das Framework ist. Ein höherer Wert zeigt an, dass das Framework populärer ist.
-
-### Photo Bearbeitungstool
 
 | Kriterium                 | Gewichtung | Photoshop | Canva | Gimp | MS Paint |
 | ------------------------- | ---------- | --------- | ----- | ---- | -------- |
@@ -63,6 +53,14 @@ In diesem Kapitel habe ich verschiedene Tools Gegeneinander in einer Entscheidun
 
 ### Javascript Framework
 
+**Kriterien:**
+
+1. **Einfach zum benutzen:** Misst die Benutzerfreundlichkeit und Intuitivität des Frameworks. Ein höherer Wert zeigt an, dass das Framework einfacher zu erlernen und zu bedienen ist.
+2. **Features & Funktionalität:** Bewerte die Anzahl und Vielfalt der Funktionen und Fähigkeiten des Frameworks. Ein höherer Wert zeigt an, dass das Framework mehr Funktionen und Möglichkeiten bietet.
+3. **Flexibilität:** Bewertet, wie anpassungsfähig das Framework ist. Ein höherer Wert zeigt an, dass das Framework leichter an verschiedene Anforderungen und Projekte angepasst werden kann.
+4. **Performance:** Bewerte die Geschwindigkeit und Effizienz des Frameworks. Ein höherer Wert zeigt an, dass das Framework schnell und leistungsstark ist.
+5. **Popularität:** Misst, wie weit verbreitet und akzeptiert das Framework ist. Ein höherer Wert zeigt an, dass das Framework populärer ist.
+
 | Kriterium                 | Gewichtung | Svelte | React | Angular | Solid |
 | ------------------------- | ---------- | ------ | ----- | ------- | ----- |
 | Einfach zum benutzen      | 1.5        | 4      | 3     | 3       | 3     |
@@ -71,3 +69,13 @@ In diesem Kapitel habe ich verschiedene Tools Gegeneinander in einer Entscheidun
 | Perfomance                | 0.5        | 5      | 4     | 4       | 4     |
 | Popularität               | 1          | 3      | 5     | 3       | 2     |
 | Total                     |            | 18.5   | 19.5  | 18      | 17    |
+
+## Umsetzung
+
+TODO
+
+## Fotografieren
+
+## Bildbearbeitung
+
+## Fotos integrieren
