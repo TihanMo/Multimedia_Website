@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+          <nav className="bg-white shadow-lg">
+            <div className="max-w-6xl mx-auto px-4">
+              <div className="flex justify-between">
+                <div className="flex space-x-7">
+                  <div>
+                    <a href="#" className="flex items-center py-4 px-2">
+                      <Image src="/Logo.jpg" alt="Logo" width={50} height={50} />
+                      <span className="font-semibold text-gray-500 text-lg p-4">Komm An!</span>
+                    </a>
+                  </div>
+
+                  <div className="hidden md:flex items-center space-x-1">
+                    <a href="/" className="py-4 px-2 text-gray-500 font-semibold">Home</a>
+                    <a href="/offers" className="py-4 px-2 text-gray-500 font-semibold">Angebote</a>
+                    <a href="/about" className="py-4 px-2 text-gray-500 font-semibold">Über Uns</a>
+                    <a href="/contact" className="py-4 px-2 text-gray-500 font-semibold">Kontakt</a>
+                    <a href="/legal" className="py-4 px-2 text-gray-500 font-semibold">Datenschutz und Impressum</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        {children}
+        </body>
     </html>
   )
 }
