@@ -93,14 +93,14 @@ Für den Fotografie Teil war ich in Winterthur und Dübendorf unterwegs und habe
 
 Wie in der Entscheidungsmatrix schon entschieden wurde habe ich für meine Bildbearbeitung Photoshop benutzt. Doch anstatt der etablierten Vollversion habe ich die Photoshop Beta Version benutzt. Die hat einige neue AI Features die ich im Rahmen dieses Projektes testen wollte und somit habe ich meine Bilder mit diesem Tool bearbeitet. In den folgenden Bildern zeige ich einen vorher nachher Vergleich. Weitere Bilder kann man unter `/Bilder nach Bearbeitung` finden.
 
-**Tram Closeup**
+**Tram Closeup**  
 Vorher:
 ![Tram Closeup Unedited](img/20230526_142323455_iOS.jpg)
 
 Nachher:
 ![Tram Closeup Edit](img/Tram_Closeup2.JPG)
 
-**Tram Vollbild:**
+**Tram Vollbild:**  
 Vorher:
 ![Tram before Edit](img/20230526_142314009_iOS.jpg)
 
