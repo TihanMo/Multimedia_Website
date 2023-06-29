@@ -10,7 +10,9 @@ const OfferCard = ({ title, imageUrl, imageAlt }: OfferCardProps) => {
   return (
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
       <div className="border rounded shadow hover:shadow-lg overflow-hidden">
-        <Image src={imageUrl} alt={imageAlt} width={500} height={300} />
+        <div className="relative h-60">
+          <Image src={imageUrl} alt={imageAlt} layout='fill' objectFit='cover' />
+        </div>
         <h2 className="text-center text-xl p-4">{title}</h2>
       </div>
     </div>

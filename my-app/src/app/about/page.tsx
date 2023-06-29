@@ -11,7 +11,7 @@ export default function page() {
 
       <main className="flex w-9/12 flex-1 p-8 bg-white rounded shadow-lg pt-20">
         <div className="w-1/2 pr-8 relative m-4">
-          <Image src="/Mercedes2.jpg" alt="About Us Image" layout="fill" objectFit="cover" className="rounded" />
+          <Image src="/images/Strasse.jpg" alt="About Us Image" layout="fill" objectFit="cover" className="rounded" />
         </div>
 
         <div className="w-1/2 text-center">
