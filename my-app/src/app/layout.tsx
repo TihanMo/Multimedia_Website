@@ -14,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="h-full">
+      <body className={`${inter.className} flex flex-col h-full`}>
         <nav className="bg-white shadow-lg">
-            <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4">
               <div className="flex justify-between">
                 <div className="flex space-x-7">
                   <div>
@@ -38,13 +38,15 @@ export default function RootLayout({
               </div>
             </div>
         </nav>
-        {children}
-        <footer className="w-full py-4 mt-6 bg-blue-600 text-white text-center text-xs">
+        <div className="flex-grow">
+          {children}
+        </div>
+        <footer className="w-full py-4 bg-blue-600 text-white text-center text-xs">
           <p>
             Komm An! | Tangensstrasse 86 | 8000 Zürich | Schweiz | <a href="mailto:example@mail.com" className="underline hover:text-blue-300">example@mail.com</a> | +41 123 456 78 90
           </p>
         </footer>
-        </body>
+      </body>
     </html>
   )
 }

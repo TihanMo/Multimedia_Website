@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import OfferCard from './offers/OfferCard'
+import OfferCard from './OfferCard'
 
 export default function Home() {
   return (
@@ -23,8 +23,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="offers" className="h-screen bg-gray-100 flex items-center justify-center">
-        <OfferCard title="Taxi" imageUrl="/Taxi2.JPG" imageAlt="Taxi" />
+      <section id="offers" className="h-screen bg-gray-100 flex flex-wrap justify-center items-center px-4 md:px-0">
+        <OfferCard title="Taxi" imageUrl="/Taxi.jpg" imageAlt="Taxi" />
+        <OfferCard title="Fernbus" imageUrl="/Fernbus.jpg" imageAlt="Fernbus" />
+        <OfferCard title="Fernbus" imageUrl="/Fernbus.jpg" imageAlt="Fernbus" />
+        <OfferCard title="Fernbus" imageUrl="/Fernbus.jpg" imageAlt="Fernbus" />
+        <OfferCard title="Fernbus" imageUrl="/Fernbus.jpg" imageAlt="Fernbus" />
+        <OfferCard title="Fernbus" imageUrl="/Fernbus.jpg" imageAlt="Fernbus" />
+        <OfferCard title="Fernbus" imageUrl="/Fernbus.jpg" imageAlt="Fernbus" />
+        <OfferCard title="Fernbus" imageUrl="/Fernbus.jpg" imageAlt="Fernbus" />
       </section>
     </div>
   )
