@@ -70,9 +70,9 @@ In diesem Kapitel habe ich verschiedene Tools Gegeneinander in einer Entscheidun
 | Popularität               | 1          | 3      | 5      | 3       | 2     |
 | Total                     |            | 18.5   | 19.5   | 18      | 17    |
 
-## Umsetzung
+## Umsetzung Website
 
-**TODO**
+Für die Umsetzung der Website habe ich Next js mit TypeScript benutzt. Next js ist ein Framework, welches auf React aufbaut und sich auf Performance, Benutzerfreundlichkeit und Client-Server verbindung spezialisiert. Ein neues Framework zu benutzen, war eine grosse Herausforderung, da ich noch nie mit Next.js gearbeitet hatte und die neueste Version 13 einiges überarbeitet hatte. Dennoch habe ich es mit meinem Wissen von React geschafft eine gutaussehende Webseite erschaffen.
 
 ## Fotografieren
 
@@ -123,4 +123,11 @@ Nachher:
 
 ## Fotos integrieren
 
-**TODO**
+**Hier wird ein Bild als Hintergrund für die Homepage verwendet:**
+![Homepage](img/homepage.jpg)
+
+**Hier wurden die Bilder als Angebote dargestellt:**
+![Fotos in Website](img/Foto_Integration.jpg)
+
+**Hier wurde das Bild als Zusatz für Über Uns verwendet:**
+![Fotos in Website](img/foto_integration2.jpg)

@@ -31,6 +31,7 @@ export default function Home() {
         <OfferCard title="Flugzeug" imageUrl="/images/Plane.png" imageAlt="Flugzeug" />
         <OfferCard title="E-Scooter" imageUrl="/images/e-scooter.jpg" imageAlt="E-Scooter" />
         <OfferCard title="Fahrrad" imageUrl="/images/velo.jpg" imageAlt="Fahrrad" />
+        <OfferCard title="Bus" imageUrl="/images/Winterthur_Bus.png" imageAlt="Bus" />
       </section>
     </div>
   )
