@@ -1,4 +1,4 @@
-import OfferCard from '../OfferCard'
+import OfferCard from './OfferCard'
 
 export default function page() {
   return (

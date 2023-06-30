@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import OfferCard from './OfferCard'
+import OfferCard from './offers/OfferCard'
 
 export default function Home() {
   return (
