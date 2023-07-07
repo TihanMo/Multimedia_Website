@@ -1,5 +1,11 @@
 # Dokumentation Multimedia Website
 
+## Wo kann man die Mutimedia Website besuchen?
+
+Die Website wurde unter [https://multimedia-website-six.vercel.app/](https://multimedia-website-six.vercel.app/) mithilfe von Vercel deployed. Wenn es nicht online ist, oder es sonstige Probleme gibt können Sie [tihan.morrol@lernende.bbw.ch](tihan.morrol@lernende.bbw.ch) kontaktieren.
+
+Dieses Projekt wurde im Rahmen eines Schulprojektes realisiert und beinhaltet teilweise Fiktionale Inhalte.
+
 ## Idee Firma
 
 In diesem Kapitel stelle ich meine Idee für die Firma vor die ich in Form vom "Multimedia Website Auftrag" umsetzen konnte.  
