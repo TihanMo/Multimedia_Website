@@ -1,6 +1,15 @@
 version: '3'
 services:
-  portainer:
-
   nextapp:
-  
+    build: .
+    restart: always
+    ports:
+      - 80:8080
+
+  portainer:
+    image: portainer/portainer
+    restart: always
+    ports:
+      - 9000:9000
+    volumes:
+      - portainer_data:/data
