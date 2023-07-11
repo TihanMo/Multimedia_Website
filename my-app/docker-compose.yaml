@@ -1,15 +1,36 @@
 version: '3'
 services:
+
   nextapp:
     build: .
     restart: always
-    ports:
-      - 80:8080
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nextapp.rule=Host(`localhost`)"
+      - "traefik.http.services.nextapp.loadbalancer.server.port=3000"
 
   portainer:
-    image: portainer/portainer
+    image: portainer/portainer-ce
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portainer.rule=Host(`localhost`)&&PathPrefix(`/portainer`)"
+      - "traefik.http.middlewares.portainerpathstrip.stripprefix.prefixes=/portainer"
+      - "traefik.http.routers.portainer.middlewares=portainerpathstrip@docker"
+      - "traefik.http.routers.portainer.service=portainer"
+      - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/data
+
+  traefik:
+    image: traefik:v2.4
     restart: always
     ports:
-      - 9000:9000
+      - 80:80
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.app.address=:80"
     volumes:
-      - portainer_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
