@@ -1,6 +1,5 @@
 version: '3'
 services:
-
   nextapp:
     build: .
     restart: always
@@ -21,7 +20,7 @@ services:
       - "traefik.http.services.portainer.loadbalancer.server.port=9000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./data:/data
+#      - ./data:/data
 
   traefik:
     image: traefik:v2.4
