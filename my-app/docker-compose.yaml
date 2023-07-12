@@ -33,10 +33,12 @@ services:
       - jafurwas
     ports:
       - 80:80
+      - 8080:8080
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.app.address=:80"
+      - "--api.insecure=true"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
