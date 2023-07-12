@@ -12,7 +12,7 @@ services:
       - "traefik.http.services.nextapp.loadbalancer.server.port=3000"
 
   portainer:
-    image: portainer/portainer-ce
+    image: portainer/portainer-ce:2.18.4-alpine
     restart: always
     networks:
       - jafurwas
