@@ -20,7 +20,6 @@ services:
       - "traefik.http.services.portainer.loadbalancer.server.port=9000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-#      - ./data:/data
 
   traefik:
     image: traefik:v2.4
