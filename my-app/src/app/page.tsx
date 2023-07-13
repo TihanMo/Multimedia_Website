@@ -12,7 +12,7 @@ export default function Home() {
         </Head>
 
         <div className="absolute inset-0 overflow-hidden">
-          <Image src="/background.jpg" fill={true} style={{objectFit:"cover"}} alt="Background" />
+          <Image src="/images/background.jpg" fill={true} style={{objectFit:"cover"}} alt="Background" />
         </div>
 
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50">

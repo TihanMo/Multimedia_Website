@@ -22,7 +22,7 @@ export default function RootLayout({
                 <div className="flex space-x-7">
                   <div>
                     <a href="/" className="flex items-center py-4 px-2">
-                      <Image src="/Logo.jpg" alt="Logo" width={50} height={50} />
+                      <Image src="/images/Logo.jpg" alt="Logo" width={50} height={50} />
                       <span className="font-semibold text-gray-500 text-lg p-4">Komm An!</span>
                     </a>
                   </div>

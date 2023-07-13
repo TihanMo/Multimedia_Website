@@ -1,0 +1,48 @@
+version: '3'
+name: tigi
+services:
+  nextapp:
+    build: .
+    restart: alwayss
+    networks:
+      - jafurwas
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nextapp.rule=Host(`localhost`)"
+      - "traefik.http.services.nextapp.loadbalancer.server.port=3000"
+
+  portainer:
+    image: portainer/portainer-ce:2.18.4-alpine
+    restart: always
+    networks:
+      - jafurwas
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portainer.rule=Host(`localhost`)&&PathPrefix(`/portainer`)"
+      - "traefik.http.middlewares.portainerpathstrip.stripprefix.prefixes=/portainer"
+      - "traefik.http.routers.portainer.middlewares=portainerpathstrip@docker"
+      - "traefik.http.routers.portainer.service=portainer"
+      - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  traefik:
+    image: traefik:v2.4
+    restart: always
+    networks:
+      - jafurwas
+    ports:
+      - 80:80
+      - 8080:8080
+    command:
+      - "--api.dashboard"
+      - "--api.insecure"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.app.address=:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  jafurwas:
+    driver: bridge
