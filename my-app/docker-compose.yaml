@@ -3,7 +3,7 @@ name: tigi
 services:
   nextapp:
     build: .
-    restart: always
+    restart: alwayss
     networks:
       - jafurwas
     labels:
